@@ -1,0 +1,10 @@
+1.	¿Qué tipo de errores se presentaron o se pueden presentar con su implementación al problema?
+R/ Al momento de desarrollar el ejercicio, por su simplicidad, los errores más comunes fueron los de sintaxis
+    y los más repetitivos fueron aquellos que implicaban el uso del :. Al momento de ejecutarlo algunos errores
+    que se pueden presentar dependen principalmente de los ingresos que haga el usuario en casos como que ingrese
+    un string al momento de preguntarle por las unidades del producto o al preguntarle por el precio del mismo.
+    
+2.	¿ Que estrategias podría usar para solucionar estos errores?
+R/ En el caso de los errores de sintaxis la solución es simple pues por lo general los IDEs te advierten de este
+ tipo de incidentes, ya en el caso de los errores que puedan darse gracias a la interacción con el usuario lo que
+ se puede hacer son validaciones que tengan en cuenta el tipo de dato que el usuario está intentando ingresar 
