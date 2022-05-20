@@ -8,7 +8,7 @@ donde se mencionan el rol, la cédula, el código del product y el total de la
 compra sujeto a los respectivos descuentos.
 '''
 
-
+menu = {11:'almuerzo', 22:'gaseosa', 33:'salchipapa', 44:'papas margarita', 55:'pastel', 66:'galleta'}
 
 
 def cobroAlmuerzos():
@@ -33,6 +33,11 @@ def cobroAlmuerzos():
                 ansBeca = True
                 
         producto = int(input('Ingresa el código del producto: '))
+
+        while producto not in menu:
+            print('Ese código no está dentro de nuestro menú')
+            producto = int(input('Ingrese un código válido: '))
+            
         unidades = int(input('Ingresa la cantidad de unidades: '))
         precio = int(input('Ingresa el precio unitario del producto: '))
 
@@ -47,6 +52,6 @@ def cobroAlmuerzos():
             else:
                 total = subtotal * 0.7
 
-        print('El %s con cedula %d, debe pagar %d por el producto %d' %(tipo, cedula, total, producto))
+        print('El %s con cédula %d, debe pagar %d por el producto %d: %s' %(tipo, cedula, total, producto, menu[producto]))
         print()
         print('########################################################################')
